@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DENNED MX | Muebles residenciales bajo pedido</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap">
+<style>
+:root{--bg:#1b1917;--surface:#242120;--line:#38332f;--text:#e8e2d9;--muted:#a59d92;--brass:#bf9b5f;--brass-d:#a68347;
+--serif:'Cormorant Garamond',Georgia,serif;--sans:'Jost',system-ui,-apple-system,'Segoe UI',sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+*,*:before,*:after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);font-weight:300;font-size:17px;line-height:1.7}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:rgba(27,25,23,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}
+.logo{font-family:var(--serif);font-size:24px;font-weight:600;letter-spacing:.14em}
+.logo span{color:var(--brass)}
+nav{display:flex;gap:28px;font-size:15px;color:var(--muted)}
+nav a:hover{color:var(--text)}
+.hero{padding:96px 0 88px}
+.hero .wrap{display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:center}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.1;margin:0}
+h1{font-size:clamp(42px,6vw,72px);letter-spacing:-.01em}
+h2{font-size:clamp(32px,4vw,46px);margin-bottom:16px}
+h3{font-size:26px;margin-bottom:8px}
+.lead{color:var(--muted);font-size:19px;max-width:46ch;margin:24px 0 36px}
+.btn{display:inline-block;padding:14px 30px;border:1px solid var(--brass);color:var(--brass);font-weight:400;font-size:16px;transition:background .2s,color .2s;background:none;cursor:pointer;font-family:inherit}
+.btn:hover{background:var(--brass);color:#1b1917}
+.btn.solid{background:var(--brass);color:#1b1917}
+.btn.solid:hover{background:var(--brass-d);border-color:var(--brass-d)}
+.hero svg{width:100%;height:auto;max-width:400px;justify-self:center}
+section{padding:88px 0;border-top:1px solid var(--line)}
+.intro{max-width:60ch;color:var(--muted);margin-bottom:48px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.grid>div{background:var(--surface);padding:36px 32px}
+.grid p{margin:0;color:var(--muted)}
+.mat{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.mat p{color:var(--muted);margin:0 0 18px}
+ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:28px;counter-reset:s}
+ol li{counter-increment:s;border-top:1px solid var(--brass);padding-top:18px}
+ol li:before{content:counter(s);font-family:var(--serif);font-size:30px;color:var(--brass)}
+ol strong{display:block;font-weight:500;margin:4px 0}
+ol span{color:var(--muted);font-size:15px;display:block;line-height:1.6}
+form{display:grid;gap:16px;max-width:560px}
+label{display:grid;gap:6px;font-size:15px;color:var(--muted)}
+input,select,textarea{background:var(--surface);border:1px solid var(--line);color:var(--text);padding:12px 14px;font:inherit;font-weight:300;border-radius:2px}
+input:focus,select:focus,textarea:focus{border-color:var(--brass);outline:none}
+footer{border-top:1px solid var(--line);padding:32px 0;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+@media(max-width:820px){.hero .wrap,.mat{grid-template-columns:1fr}.hero{padding:56px 0}.hero svg{max-width:280px;order:-1}ol{grid-template-columns:1fr 1fr}nav{gap:16px}.grid{grid-template-columns:1fr}section{padding:64px 0}}
+@media(max-width:480px){nav a:nth-child(2){display:none}ol{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<a class="logo" href="#inicio">DENNED<span> MX</span></a>
+<nav><a href="#servicios">Servicios</a><a href="#materiales">Materiales</a><a href="#proceso">Proceso</a><a href="#contacto">Contacto</a></nav>
+</div></header>
+
+<main id="inicio">
+<div class="hero"><div class="wrap">
+<div>
+<h1>Muebles hechos para tu casa, a tu medida</h1>
+<p class="lead">Fabricamos sillas y mesas bajo pedido en herrería y madera, con tapizados a tu gusto. Cada pieza se diseña y se construye para tu espacio.</p>
+<a class="btn solid" href="#contacto">Pedir cotización</a>
+</div>
+<svg viewBox="0 0 300 340" fill="none" stroke="#bf9b5f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Ilustración de una silla de herrería con respaldo tapizado">
+<rect x="82" y="30" width="136" height="120" rx="10" fill="#242120"/>
+<rect x="96" y="44" width="108" height="92" rx="6" stroke="#a59d92" stroke-width="1.5" stroke-dasharray="3 6"/>
+<path d="M90 150v30M210 150v30"/>
+<rect x="66" y="180" width="168" height="26" rx="4" fill="#242120"/>
+<path d="M78 206l-14 116M222 206l14 116M78 206l14 116M222 206l-14 116" />
+<path d="M70 268h160" stroke-width="1.5"/>
+<path d="M40 322h220" stroke="#38332f"/>
+</svg>
+</div></div>
+
+<section id="servicios"><div class="wrap">
+<h2>Lo que fabricamos</h2>
+<p class="intro">Trabajamos únicamente bajo pedido. Eliges medidas, acabados y telas, y nosotros construimos la pieza.</p>
+<div class="grid">
+<div><h3>Sillas</h3><p>Comedor, barra y escritorio, con estructura de herrería o madera y asiento tapizado.</p></div>
+<div><h3>Mesas</h3><p>Comedor, centro y auxiliares, con tapa de madera maciza y base de herrería en el tamaño que necesitas.</p></div>
+<div><h3>Herrería y madera</h3><p>Estructuras de acero soldadas y pintadas, combinadas con maderas seleccionadas y lacadas.</p></div>
+<div><h3>Tapizados</h3><p>Tapizado nuevo o renovación de asientos y respaldos, con la tela o el piel sintética que prefieras.</p></div>
+</div>
+</div></section>
+
+<section id="materiales"><div class="wrap mat">
+<div><h2>Materiales que duran</h2></div>
+<div>
+<p>El acero se corta, se suelda y se termina con pintura electrostática o negro mate, para que resista el uso diario.</p>
+<p>La madera se elige por veta y resistencia, y se protege con acabados que conservan su color natural.</p>
+<p>Las telas y espumas se seleccionan contigo según el uso: comedor familiar, oficina en casa o sala.</p>
+</div>
+</div></section>
+
+<section id="proceso"><div class="wrap">
+<h2>Cómo trabajamos</h2>
+<p class="intro">Un proceso claro, de la primera idea a la entrega en tu casa.</p>
+<ol>
+<li><strong>Cuéntanos tu idea</strong><span>Medidas, estilo y uso de la pieza.</span></li>
+<li><strong>Diseño y cotización</strong><span>Te presentamos el diseño y el precio.</span></li>
+<li><strong>Fabricación</strong><span>Construimos la pieza en taller.</span></li>
+<li><strong>Entrega</strong><span>La llevamos y la revisas contigo.</span></li>
+</ol>
+</div></section>
+
+<section id="contacto"><div class="wrap">
+<h2>Cuéntanos qué necesitas</h2>
+<p class="intro">Llena el formulario y te contestamos por WhatsApp con una propuesta.</p>
+<form id="f">
+<label>Nombre<input name="n" required autocomplete="name"></label>
+<label>¿Qué mueble necesitas?
+<select name="t"><option>Sillas</option><option>Mesa</option><option>Sillas y mesa</option><option>Tapizado</option><option>Otro</option></select></label>
+<label>Detalles (medidas, materiales, colores)<textarea name="d" rows="4"></textarea></label>
+<button class="btn solid" type="submit">Enviar por WhatsApp</button>
+</form>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span>DENNED MX</span><span>Muebles residenciales bajo pedido</span></div></footer>
+
+<script>
+// Cambia este número por el WhatsApp de la empresa (código de país + número, sin signos)
+var WHATSAPP="5200000000000";
+document.getElementById("f").addEventListener("submit",function(e){
+e.preventDefault();var d=new FormData(e.target);
+var m="Hola, soy "+d.get("n")+". Me interesa: "+d.get("t")+". "+(d.get("d")||"");
+window.open("https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent(m),"_blank","noopener");
+});
+</script>
+</body>
+</html>
